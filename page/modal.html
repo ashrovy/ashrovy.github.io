@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/scan.js"></script>
+    <style type="text/css">
+      .modal-dialog {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .modal-content {
+        height: auto;
+        min-height: 0%;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .modal-body {
+        margin: 0;
+        padding: 0;
+      }
+
+    </style>
+    <title>Ashrovy Apps</title>
+  </head>
+  <body>
+    
+  <!-- navigation -->
+  <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
+      <img src="icon.png" width="30" height="30" alt="" >
+    </a>
+  </nav>
+  <!-- /navigation -->
+
+
+    <!-- modal applist --> <!-- ==================== -->
+    <div class="modal fade bd-example-modal-sm" id="allApps" tabindex="-1" role="dialog" aria-hidden="true">
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+          <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
+            <img src="icon.png" width="30" height="30" alt="" >
+          </a>
+          <a class="navbar-brand" href="#" data-toggle="modal" data-target="#homeApps">
+            <img src="icon.png" width="30" height="30" alt="" >
+          </a>
+          <a class="navbar-brand" href="#" data-toggle="modal" data-target="#sideApps">
+            <img src="icon.png" width="30" height="30" alt="" >
+          </a>
+        </nav>
+
+          <!-- ============================ -->    
+          <div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body">
+
+            <div class="container-fluid"> <!-- appslist -->
+            <div class="row">
+                <div class="span6" style="float: none; margin: 0 auto; margin-top: 50;">
+
+                  <center><h1 class="display-4">All Apps!</h1></center><br/>
+
+                  <form>
+                    <div class="form-group"> 
+                      <input type="text" class="form-control rounded-pill" id=""  placeholder="Searching apps ... ">
+                    </div>
+                  </form>
+
+                  <br><br>
+
+                  <a class="nav-link text-right" data-toggle="collapse"  href="#googleApps" style="color: grey ;margin: 0;">Google Apps</a>
+                  <hr class="my-2" style="margin: 0;">
+
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                  <br>
+
+                  <div class="collapse" id="googleApps"> <!-- googleAppsCollapse -->
+
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  
+                  </div> <!-- /googleAppsCollapse -->
+
+                  <br>
+
+                  <a class="nav-link text-right" data-toggle="collapse" href="#privateWallet" href="#privateWallet" style="color: grey ;margin: 0;">Private Wallet</a>
+                  <hr class="my-2" style="margin: 0;">
+
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                 
+
+                  <br>
+
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#namaApps">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                 
+                  <br> <!-- NOAPPS -->  
+                  
+                  <a data-toggle="modal" data-target="#NOAPPS">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#NOAPPS">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                  <a data-toggle="modal" data-target="#NOAPPS">
+                    <img class="rounded-lg" src="icon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                 
+                  <br> 
+
+                </div>
+            </div>
+          </div> <!-- /applist -->
+        <!-- /============================ -->        
+        </div></div></div>
+    </div>
+    <!-- /modal applist --> <!-- ==================== -->
+
+    </body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
