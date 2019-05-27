@@ -2,10 +2,40 @@
 <html>
   <head>
     <link rel="stylesheet" href="scan.css">
-    <script src="browser_bindings.js"></script>
+    <script src="browser_bindings.js">
+    	var bindings = {
+  'android': 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1'  
+};
+
+window.addEventListener('load', function(e) {
+  for (var key in bindings) {
+    document.querySelector('iframe[data-name="' + key + '"]').
+        setUserAgentOverride(bindings[key]);
+  }
+});
+    	
+    </script>
     <script src="scan.js"></script>
+    <script>
+    	chrome.webRequest.onHeadersReceived.addListener(
+
+  function (details) {
+    for (var j = 0; j < details.responseHeaders.length; ++j) {
+      if (details.responseHeaders[j].name.toLowerCase() == 'x-frame-options') {
+        details.responseHeaders.splice(j, 1);
+		
+        return {
+          responseHeaders: details.responseHeaders 
+        };
+      }
+    }
+  }, {
+    urls: ["<all_urls>"]
+  }, ["blocking", "responseHeaders"]);
+
+    </script>
   <body>
     <div id="dummy-workaround"></div>
-    <iframe data-name="android" src="https://quora.com/" partition="persist:scan" allowtransparency="on"></iframe>
+    <iframe data-name="android" src="https://quora.com/" partition="persist:scan" allowtransparency="on" width="350" height="550"></iframe>
   </body>
 </html>
