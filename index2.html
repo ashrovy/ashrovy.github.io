@@ -1,0 +1,967 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/css/all.css">
+    <script src="js/scan.js"></script>
+      <style type="text/css">
+        .modal-dialog {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .modal-content {
+          height: auto;
+          min-height: 0%;
+          border-radius: 0;
+          margin: 0;
+          padding: 0;
+        }
+
+        .modal-body {
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+    <title>Ashrovy Apps</title>
+  </head>
+  <body >
+    
+    <!-- navigation -->
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
+        <img src="button/menu.png" width="30" height="30" alt="" >
+      </a>
+      <a class="navbar-brand" href="#" data-dismiss="modal">
+        <img src="button/home.png" width="30" height="30" alt="" >
+      </a>
+      <a class="navbar-brand">
+        <img src="button/chat.png" width="30" height="30" alt="" >
+      </a>
+    </nav>
+    <!-- /navigation -->
+
+    <!-- body -->
+    <!-- <iframe src="land/index.html" style="height: 575px; width: 350px" scrolling="yes" frameborder="0" allowfullscreen ></iframe> -->
+    <!-- <webview src="https://medium.com" style="height: 575px; width: 350px" frameborder="0" allowfullscreen></webview> -->
+    <!-- /body -->
+
+
+    <!-- modal applist --> <!-- ==================== -->
+    <section id="applist-section">
+      <div class="modal fade bd-example-modal-sm" id="allApps" tabindex="-1" role="dialog" aria-hidden="true">
+          <!-- navigation modal -->
+          <nav class="navbar fixed-bottom navbar-success bg-success border-0">
+            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
+              <img src="button/menu.png" width="30" height="30" alt="" >
+            </a>
+            <a class="navbar-brand" href="#" data-dismiss="modal">
+              <img src="button/home.png" width="30" height="30" alt="" >
+            </a>
+            <a class="navbar-brand">
+              <img src="button/chat.png" width="30" height="30" alt="" >
+            </a>
+          </nav>         
+          <!-- /navigation modal -->
+
+            <!-- ============================ -->    
+            <div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body">
+
+              <div class="container-fluid"> <!-- appslist -->
+              <div class="row">
+                  <div class="span6" style="float: none; margin: 0 auto; margin-top: 50;">
+
+                    <!-- judul atas -->
+                    <center><h1 class="display-4">All Apps!</h1></center><br/>
+
+                    <!-- searching apps -->
+                    <form>
+                      <div class="form-group"> 
+                        <input type="text" class="form-control rounded-pill" id=""  placeholder="Searching apps ... ">
+                      </div>
+                    </form>
+
+                    <br><br>
+                    <!-- ============= GOOGLE APPS =============== -->
+                    <section>
+                      <a class="nav-link text-right" data-toggle="collapse"  href="#googleApps" style="color: grey ;margin: 0;">Google Apps</a>
+                      <hr class="my-2" style="margin: 0;">
+
+                      <a data-toggle="modal" data-target="#googlesearch"> <!-- googlesearch -->
+                        <img class="rounded-lg" src="icon/googlesearch.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#gmail"> <!-- gmail -->
+                        <img class="rounded-lg" src="icon/gmail.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#googlekeep"> <!-- googlekeep -->
+                        <img class="rounded-lg" src="icon/googlekeep.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                      <br>
+
+                      <div class="collapse" id="googleApps"> <!-- googleAppsCollapse -->
+
+                        <a data-toggle="modal" data-target="#googleMaps"> <!-- googleMaps -->
+                          <img class="rounded-lg" src="icon/googleMaps.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#driveGoogle"> <!-- driveGoogle -->
+                          <img class="rounded-lg" src="icon/driveGoogle.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#translate"> <!-- translate -->
+                          <img class="rounded-lg" src="icon/translate.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                        <br>
+
+                        <a data-toggle="modal" data-target="#newsGoogle"> <!-- newsGoogle -->
+                          <img class="rounded-lg" src="icon/news.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#photo"> <!-- photo -->
+                          <img class="rounded-lg" src="icon/photos.png" width="30" height="30" alt="" style="margin: 30;"></a>                        
+                      </div> <!-- /googleAppsCollapse -->
+
+                      
+                    </section>  
+                    <!-- ============= /GOOGLE APPS =============== -->
+
+                    <!-- ============= SOCIAL MEDIA =============== -->
+                    <section>
+                      <a class="nav-link text-right" data-toggle="collapse" href="#socialmedia" style="color: grey ;margin: 0;">Social Media</a>
+                      <hr class="my-2" style="margin: 0;">
+
+                      <a data-toggle="modal" data-target="#disqus"> <!-- disqus -->
+                        <img class="rounded-lg" src="icon/disqus.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#linkedin"> <!-- linkedin -->
+                        <img class="rounded-lg" src="icon/linkedin.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#facebook"> <!-- facebook -->
+                        <img class="rounded-lg" src="icon/facebook.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                     
+                      <br>
+
+                      <div class="collapse" id="socialmedia">
+
+                        <a data-toggle="modal" data-target="#tumblr"> <!-- tumblr -->
+                          <img class="rounded-lg" src="icon/tumblr.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#reddit"> <!-- reddit -->
+                          <img class="rounded-lg" src="icon/reddit.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#twitter"> <!-- twitter -->
+                          <img class="rounded-lg" src="icon/twitter.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                        <br>
+
+                        <a data-toggle="modal" data-target="#9gag"> <!-- 9gag -->
+                          <img class="rounded-lg" src="icon/9gag.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#pinterest"> <!-- pinterest -->
+                          <img class="rounded-lg" src="icon/pinterest.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#instagram"> <!-- instagram -->
+                          <img class="rounded-lg" src="icon/instagram.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                        <br>
+
+                        <a data-toggle="modal" data-target="#castbox"> <!-- castbox -->
+                          <img class="rounded-lg" src="icon/castbox.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#periscope">  <!-- periscope -->
+                          <img class="rounded-lg" src="icon/periscope.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#youtube"> <!-- youtube -->
+                          <img class="rounded-lg" src="icon/youtube.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                      
+
+
+                      <br> <!-- NOAPPS -->  
+                      
+                      <a data-toggle="modal" data-target="#telegram"> <!-- telegram -->
+                        <img class="rounded-lg" src="icon/telegram.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#whatsapp"> <!-- whatsapp -->
+                        <img class="rounded-lg" src="icon/whatsapp.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#message"> <!-- message -->
+                        <img class="rounded-lg" src="icon/message.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                     
+                      <br>
+
+                      <a data-toggle="modal" data-target="#messenger"> <!-- line -->
+                        <img class="rounded-lg" src="icon/messenger.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#slack"> <!-- slack -->
+                        <img class="rounded-lg" src="icon/slack.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#discord"> <!-- discord -->
+                        <img class="rounded-lg" src="icon/discord.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                      </div>
+
+                      <br>
+                    </section>
+                    <!-- ============= /SOCIAL MEDIA =============== -->
+
+                    <!-- ============= MICRO SITE =============== -->
+                    <section>
+
+                      <a class="nav-link text-right" data-toggle="collapse" href="#microsite" style="color: grey ;margin: 0;">Micro Site</a>
+                      <hr class="my-2" style="margin: 0;">
+
+                      <a data-toggle="modal" data-target="#wordpress"> <!-- wordpress -->
+                        <img class="rounded-lg" src="icon/wordpress.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#medium">  <!-- medium -->
+                        <img class="rounded-lg" src="icon/medium.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                      <a data-toggle="modal" data-target="#quora"> <!-- quora -->
+                        <img class="rounded-lg" src="icon/quora.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                      <div class="collapse" id="microsite">
+
+                        <br>
+
+                        <a data-toggle="modal" data-target="#pocket"> <!-- pocket -->
+                          <img class="rounded-lg" src="icon/pocket.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#highly"> <!-- highly -->
+                          <img class="rounded-lg" src="icon/highly.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#issuu"> <!-- issuu -->
+                          <img class="rounded-lg" src="icon/issuu.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                        <br>
+
+                        <a data-toggle="modal" data-target="#artstation">  <!-- artstation -->
+                          <img class="rounded-lg" src="icon/artstation.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#dribbble"> <!-- dribbble -->
+                          <img class="rounded-lg" src="icon/dribbble.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#behance"> <!-- behance -->
+                          <img class="rounded-lg" src="icon/behance.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                        <br>
+
+                        <a data-toggle="modal" data-target="#comico"> <!-- comico -->
+                          <img class="rounded-lg" src="icon/comico.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#webtoon">  <!-- webtoon -->
+                          <img class="rounded-lg" src="icon/webtoon.png" width="30" height="30" alt="" style="margin: 30;"></a>
+                        <a data-toggle="modal" data-target="#ciayo"> <!-- ciayo -->
+                          <img class="rounded-lg" src="icon/ciayo.png" width="30" height="30" alt="" style="margin: 30;"></a>
+
+                        </div>
+
+                    </section>
+
+                    <!-- ============= /MICRO SITE =============== -->
+
+                  </div>
+              </div>
+            </div> <!-- /applist -->
+          <!-- /============================ -->        
+          </div></div></div>
+      </div>
+    </section>
+    <!-- /modal applist --> <!-- ==================== -->
+
+
+    <!-- modal homeApps -->
+    <section>
+      <div class="modal fade bd-example-modal-sm" id="homeApps" tabindex="-1" role="dialog" aria-hidden="true">
+          <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+            <button type="button" class="btn btn-danger my-2 my-sm-0" data-dismiss="modal">Close</button>
+          </nav>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- <iframe src="web/google/scan.html" style="height: 575px; width: 350px" frameborder="0" allowfullscreen></iframe> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /modal homeApps -->
+
+    <!-- modal sideApps -->
+    <section>
+      <div class="modal fade bd-example-modal-sm" id="sideApps" tabindex="-1" role="dialog" aria-hidden="true">
+          <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+            <button type="button" class="btn btn-danger my-2 my-sm-0" data-dismiss="modal">Close</button>
+          </nav>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <iframe src="web/google/scan.html" style="height: 575px; width: 350px" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /modal sideApps -->
+
+
+    <!-- modal appview --> <!-- ==================== -->
+    <section id="modal-appview">
+
+      <!-- ======== GOOGLE APPS ========= --> 
+      <section> 
+        <!-- ==================== --> <!-- googlesearch -->
+        <div class="modal fade bd-example-modal-sm" id="googlesearch" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/google/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /googlesearch -->
+
+        <!-- ==================== --> <!-- gmail -->
+        <div class="modal fade bd-example-modal-sm" id="gmail" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/gmail/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /gmail -->    
+
+        <!-- ==================== --> <!-- googlekeep -->
+        <div class="modal fade bd-example-modal-sm" id="googlekeep" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/keep/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /googlekeep -->    
+
+        <!-- ==================== --> <!-- googleMaps -->
+        <div class="modal fade bd-example-modal-sm" id="googleMaps" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/maps/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /googleMaps -->   
+
+        <!-- ==================== --> <!-- driveGoogle -->
+        <div class="modal fade bd-example-modal-sm" id="driveGoogle" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/drive/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /driveGoogle -->  
+
+        <!-- ==================== --> <!-- newsGoogle -->
+        <div class="modal fade bd-example-modal-sm" id="newsGoogle" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/news/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /newsGoogle -->  
+
+        <!-- ==================== --> <!-- translate -->
+        <div class="modal fade bd-example-modal-sm" id="translate" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/translate/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /translate -->  
+
+        <!-- ==================== --> <!-- photo -->
+        <div class="modal fade bd-example-modal-sm" id="photo" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe id="googlscan" src="web/photo/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /photo -->  
+      </section>
+      <!-- ======== /GOOGLE APPS ========= -->  
+
+      <!-- ======== SOCIAL APPS ========= -->  
+      <section>
+        <!-- ==================== --> <!-- facebook -->
+        <div class="modal fade bd-example-modal-sm" id="facebook" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/facebook/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /facebook -->
+
+        <!-- ==================== --> <!-- linkedin -->
+        <div class="modal fade bd-example-modal-sm" id="linkedin" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20; margin-bottom: 60;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/linkedin/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /linkedin -->
+
+        <!-- ==================== --> <!-- disqus -->
+        <div class="modal fade bd-example-modal-sm" id="disqus" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20; margin-bottom: 60;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/disqus/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /disqus -->
+
+        <!-- ==================== --> <!-- twitter -->
+        <div class="modal fade bd-example-modal-sm" id="twitter" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-left"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/twitter/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /twitter -->
+
+        <!-- ==================== --> <!-- tumblr -->
+        <div class="modal fade bd-example-modal-sm" id="tumblr" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/tumblr/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /tumblr -->
+
+        <!-- ==================== --> <!-- reddit -->
+        <div class="modal fade bd-example-modal-sm" id="reddit" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/reddit/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /reddit -->
+
+        <!-- ==================== --> <!-- instagram -->
+        <div class="modal fade bd-example-modal-sm" id="instagram" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/instagram/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /instagram -->
+
+        <!-- ==================== --> <!-- pinterest -->
+        <div class="modal fade bd-example-modal-sm" id="pinterest" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20; margin-bottom: 60;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/pinterest/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /pinterest -->
+
+        <!-- ==================== --> <!-- 9gag -->
+        <div class="modal fade bd-example-modal-sm" id="9gag" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/9gag/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /9gag -->
+
+        <!-- ==================== --> <!-- castbox -->
+        <div class="modal fade bd-example-modal-sm" id="castbox" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/castbox/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /castbox -->
+
+        <!-- ==================== --> <!-- periscope -->
+        <div class="modal fade bd-example-modal-sm" id="periscope" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/periscope/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /periscope -->
+
+        <!-- ==================== --> <!-- youtube -->
+        <div class="modal fade bd-example-modal-sm" id="youtube" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/youtube/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /youtube -->
+
+        <!-- ==================== -->  <!-- whatsapp --> 
+        <div class=“modal fade bd-example-modal-sm” id=“whatsapp” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/whatsapp/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /whatsapp  -->
+
+        <!-- ==================== -->  <!-- telegram --> 
+        <div class=“modal fade bd-example-modal-sm” id=“telegram” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/telegram/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /telegram  -->
+
+        <!-- ==================== -->  <!-- message --> 
+        <div class=“modal fade bd-example-modal-sm” id=“message” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/message/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /message  -->
+
+        <!-- ==================== -->  <!-- messenger --> 
+        <div class=“modal fade bd-example-modal-sm” id=“messenger” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/messenger/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /messenger  -->
+
+        <!-- ==================== -->  <!-- discord --> 
+        <div class=“modal fade bd-example-modal-sm” id=“discord” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/discord/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /discord  -->
+
+        <!-- ==================== -->  <!-- slack --> 
+        <div class=“modal fade bd-example-modal-sm” id=“slack” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/slack/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /slack  -->
+
+      </section>
+      <!-- ======== /SOCIAL APPS ========= -->  
+
+      <!-- ======== READING APPS ========= -->  
+      <section>
+        
+        <!-- ==================== --> <!-- medium -->
+        <div class="modal fade bd-example-modal-sm" id="medium" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/medium/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /medium -->
+
+        <!-- ==================== --> <!-- wordpress -->
+        <div class="modal fade bd-example-modal-sm" id="wordpress" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/wordpress/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /wordpress -->
+
+        <!-- ==================== --> <!-- quora -->
+        <div class="modal fade bd-example-modal-sm" id="quora" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/quora/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /quora -->
+
+        <!-- ==================== --> <!-- ciayo -->
+        <div class="modal fade bd-example-modal-sm" id="ciayo" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/ciayo/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /ciayo -->
+
+        <!-- ==================== --> <!-- webtoon -->
+        <div class="modal fade bd-example-modal-sm" id="webtoon" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/webtoon/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /webtoon -->
+
+        <!-- ==================== --> <!-- comico -->
+        <div class="modal fade bd-example-modal-sm" id="comico" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/comico/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /comico -->
+
+        <!-- ==================== --> <!-- dribbble -->
+        <div class="modal fade bd-example-modal-sm" id="dribbble" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/dribbble/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /dribbble -->
+
+        <!-- ==================== --> <!-- behance -->
+        <div class="modal fade bd-example-modal-sm" id="behance" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/behance/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /behance -->
+
+        <!-- ==================== --> <!-- artstation -->
+        <div class="modal fade bd-example-modal-sm" id="artstation" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="fixed-bottom float-right"> <!-- close button -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 20;">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div> <!-- /close button -->
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <iframe src="web/artstation/scan.html" style="height: 620px; width: 350px" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== --> <!-- /artstation -->
+
+        <!-- ==================== -->  <!-- pocket --> 
+        <div class=“modal fade bd-example-modal-sm” id=“pocket” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/pocket/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /pocket  -->
+
+        <!-- ==================== -->  <!-- highly --> 
+        <div class=“modal fade bd-example-modal-sm” id=“highly” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/highly/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /highly  -->
+
+        <!-- ==================== -->  <!-- issuu --> 
+        <div class=“modal fade bd-example-modal-sm” id=“issuu” tabindex=“-1” role=“dialog” aria-hidden=“true”>
+          <div class=“fixed-bottom float-right”>  <!-- close button  -->
+            <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close” style=“margin: 20;”>
+              <i class=“far fa-window-close”></i>
+            </button>
+          </div>  <!-- /close button  -->
+          <div class=“modal-dialog” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-body”>
+                <iframe src=“web/issuu/scan.html” style=“height: 620px; width: 350px” frameborder=“0” allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== -->  <!-- /issuu  -->
+
+      </section>
+
+    </section>
+    <!-- /modal applist --> <!-- ==================== -->
+
+    <section> <!-- sidebar -->
+      
+    </section> <!-- /sidebar -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    </body>
+</html>
