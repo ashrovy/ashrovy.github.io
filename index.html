@@ -1,10 +1,64 @@
 <<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>whatsapp</title>
+    <meta charset="utf-8"><title>AshChrome</title>
+    <!-- [css-bootstrap] -->
+      <link rel="stylesheet" href="modules/css/bootstrap.min.css">
+    <!-- [/css-bootstrap] -->
+
+    <!-- [css-fontawesome] -->
+      <link rel="stylesheet" href="modules/css/all.css">
+    <!-- [/css-fontawesome] -->
+
+    <!-- [js-binding] -->
+      <script src="modules/ext/browser_bindings.js"></script>
+    <!-- [/js-binding] -->
+
+
+
+
   </head>
   <body>
-    <iframe data-name="android" src="https://web.whatsapp.com/" partition="persist:scan" allowtransparency="on" style="width:600px; height:800px;"></iframe>
+    <!-- ====== navbar section ====== -->
+    <section> <!-- [navbar] -->
+      <section> <!-- [navbar-on-top] -->
+        <!-- [navbar-top] -->
+        <nav class="navbar fixed-top navbar-light bg-light justify-content-center">
+          <a class="navbar-brand" href="#">
+            <img src="assets/image/bootstrap-solid.svg" width="30" height="30" alt=""></a>
+        </nav>
+        <!-- [/navbar-top] -->
+
+      </section> <!-- [/navbar-on-top] -->
+
+      <section> <!-- [navbar-bottom] -->
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+          <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
+            <img src="assets/button/menu.png" width="30" height="30" alt="" ></a>
+          <a class="navbar-brand" href="#" data-dismiss="modal">
+            <img src="assets/button/home.png" width="30" height="30" alt="" ></a>
+          <a class="navbar-brand">
+            <img src="assets/button/chat.png" width="30" height="30" alt="" ></a>
+        </nav>
+      </section> <!-- [/navbar-bottom] -->
+    </section> <!-- [/navbar] -->
+    <!-- ====== navbar section ====== -->
+
+    <!-- ====== body section ====== -->
+    <div class="container h-100" style="margin:auto;">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe data-name="iPhone" src="modules/html/quora/scan.html" class="embed-responsive-item" partition="persist:scan" allowtransparency="on" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- ====== body section ====== -->
+
+
+    <!-- [js-bootstrap] -->
+      <script src="modules/js/jquery-3.3.1.slim.min.js"></script>
+      <script src="modules/js/popper.min.js"></script>
+      <script src="modules/js/bootstrap.min.js" ></script>
+    <!-- [/js-bootstrap] -->
   </body>
 </html>
