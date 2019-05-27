@@ -18,7 +18,7 @@ chrome.app.runtime.onLaunched.addListener(function() {
   //     height: height,
   //     left: Math.round((screenWidth-width)/2),
   //     top: Math.round((screenHeight-height)/2)
-  //   }
+  //   } 1769ff
   // });
   chrome.app.window.create('index.html', {
     innerBounds: {
@@ -29,7 +29,8 @@ chrome.app.runtime.onLaunched.addListener(function() {
       maxWidth: 350,
       maxHeight: 600
     }, frame : {
-      'color': '#1769ff'
+      
+      'color': '#5cb85c'
     }
   })
 });
