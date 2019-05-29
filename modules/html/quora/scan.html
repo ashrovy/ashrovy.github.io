@@ -2,37 +2,14 @@
 <html>
   <head>
     <link rel="stylesheet" href="scan.css">
-    <script src="browser_bindings.js">
-    	var bindings = {
-  'android': 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1'  
-};
-
-window.addEventListener('load', function(e) {
-  for (var key in bindings) {
-    document.querySelector('iframe[data-name="' + key + '"]').
-        setUserAgentOverride(bindings[key]);
-  }
-});
-
-    </script>
+    <!-- <script src="browser_bindings.js"></script> -->
     <script src="scan.js"></script>
-    <script>
-    	chrome.webRequest.onHeadersReceived.addListener(
+    <script type="text/javascript">
+    	navigator.__defineGetter__('userAgent', function(){
+		    return 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1' // customized user agent
+		});
 
-  function (details) {
-    for (var j = 0; j < details.responseHeaders.length; ++j) {
-      if (details.responseHeaders[j].name.toLowerCase() == 'x-frame-options') {
-        details.responseHeaders.splice(j, 1);
-		
-        return {
-          responseHeaders: details.responseHeaders 
-        };
-      }
-    }
-  }, {
-    urls: ["<all_urls>"]
-  }, ["blocking", "responseHeaders"]);
-
+	navigator.userAgent; // 'foo'
     </script>
   <body>
     <div id="dummy-workaround"></div>
