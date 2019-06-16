@@ -23,110 +23,107 @@
 
 
   </head>
-  <body style="margin:0;">
-  <div class="wrapper">
-    <!-- ====== navbar section ====== -->
-    <section> <!-- [navbar] -->
-      <section> <!-- [navbar-on-top] -->
-        <!-- [navbar-top] -->
-        <nav class="navbar fixed-top navbar-light bg-light justify-content-center">
-          <a class="navbar-brand" href="#">
-            <img src="assets/image/bootstrap-solid.svg" width="30" height="30" alt=""></a>
-        </nav> <br><br>
-        <!-- [/navbar-top] -->
-      </section> <!-- [/navbar-on-top] -->
+  <body style="">
+  <div class="fluid-container">
 
-      <section> <!-- [navbar-bottom] -->
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-          <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
-            <img src="assets/button/menu.png" width="30" height="30" alt="" ></a>
-          <a class="navbar-brand" href="#" data-dismiss="modal">
-            <img src="assets/button/home.png" width="30" height="30" alt="" ></a>
-          <a class="navbar-brand" id="sidebarCollapse" href="#">
-            <img src="assets/button/chat.png" width="30" height="30" alt="" ></a>
-        </nav>
-      </section> <!-- [/navbar-bottom] -->
-    </section> <!-- [/navbar] -->
-    <!-- ====== navbar section ====== -->
+    <div class="row"><!-- ====== navbar section ====== -->
+      <div class="col">
+        <section> <!-- [navbar] -->
+          <section> <!-- [navbar-on-top] -->
+            <!-- [navbar-top] -->
+            <nav class="navbar fixed-top navbar-light bg-light justify-content-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/image/bootstrap-solid.svg" width="30" height="30" alt=""></a>
+            </nav> <br><br>
+            <!-- [/navbar-top] -->
+          </section> <!-- [/navbar-on-top] -->
 
-    <!-- ====== body section ====== -->
-    <section>
-      <!-- <div class="container-fluid" >
-        <div class="card" style="margin:auto;">
-          <div class="card-body">
-            <img src="assets/image/2.jpg" class="mw-100 mh-100" alt="...">
+          <section> <!-- [navbar-bottom] -->
+            <nav class="navbar fixed-bottom navbar-light bg-light">
+              <a class="navbar-brand" href="#" data-toggle="modal" data-target="#allApps">
+                <img src="assets/button/menu.png" width="30" height="30" alt="" ></a>
+              <a class="navbar-brand" href="#" data-dismiss="modal">
+                <img src="assets/button/home.png" width="30" height="30" alt="" ></a>
+              <a class="navbar-brand" id="sidebarCollapse" href="#">
+                <img src="assets/button/chat.png" width="30" height="30" alt="" ></a>
+            </nav>
+          </section> <!-- [/navbar-bottom] -->
+        </section> <!-- [/navbar] -->
+        <!-- ====== navbar section ====== -->
+      </div>
+    </div>
+
+    <div class="row"><!-- ====== body section ====== -->
+      <div class="col">
+        <section>
+          <div style="">
+            <iframe data-name="iPhone" src="modules/html/twitter/scan.html" class="embed-responsive-item" partition="persist:scan" allowtransparency="on" frameborder="0" height="550" width="100%" style="margin-bottom:0; margin-top:7px;" ></iframe>
           </div>
-        </div>
-      </div> -->
+        </section>            
+      </div>
+    </div><!-- ====== body section ====== -->
+        
 
-            <div class="fluid-container">
-              <div style="margin:auto">
-                <iframe data-name="iPhone" src="modules/html/quora/scan.html" class="embed-responsive-item" partition="persist:scan" allowtransparency="on" frameborder="0" height="350px" width="550px" style="margin:0; margin-bottom:30; margin-top:30;" ></iframe>
-              </div>
-            </div>
-            <!-- <webview data-name="iPhone" src="modules/html/quora/scan.html" class="embed-responsive-item" partition="persist:scan" allowtransparency="on" frameborder="0" allowfullscreen style="width:350px; height:550px;"></webview> -->
-    </section>            
-    <!-- ====== body section ====== -->
+        <!-- ====== sidebar section ====== -->
+        <section>
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Bootstrap Sidebar</h3>
+                </div>
 
-    <!-- ====== sidebar section ====== -->
-    <section>
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-            </div>
+                <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="#">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
 
-            <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <!-- ====== sidebar section ====== -->
+                <ul class="list-unstyled CTAs">
+                    <li>
+                        <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                    </li>
+                    <li>
+                        <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- ====== sidebar section ====== -->
+    
   </div>
 
 
