@@ -18,6 +18,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+    <style type="text/css">
+      .modal-content {
+        padding:0;
+        margin:0;
+        overflow: auto;
+       height:700px;
+       width:100%;
+      }
+    </style>
+
   </head>
   <body>
     <!-- Navbar Menu  ---->
@@ -218,28 +228,39 @@
     </section>
 
     <!--- Modal ------->
-    <iframe src="./iframe/faq/index.html" class="modal fade" id="modal1" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-
-    <iframe src="./iframe/price/index.html" class="modal fade" id="modal2" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-
-    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-          
-          <div class="modal-body">
-
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>        
-            <!-- 16:9 aspect ratio -->
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+    <div class="modal fade" id="modal1">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-content">
+            <iframe src="./iframe/faq/index.html" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+          </div>
         </div>
-        </div>
-      </div>
       </div>
     </div>
+
+    <div class="modal fade" id="modal2">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-content">
+            <iframe src="./iframe/price/index.html" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-content">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315"  class="embed-responsive-item" src="https://www.youtube.com/watch?v=152rzfIc45w&t=1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" id="video"  allowscriptaccess="always" allow="autoplay" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     
     <!--- Smooth Scroll js ---------->
     <script type="text/javascript" src="js/smooth-scroll.js"></script>

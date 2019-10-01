@@ -1,122 +1,121 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Hind', sans-serif;
-  background: #fff;
-  color: #4d5974;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #E5E5E5;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-  color: #373d51;
-  padding: 1.3rem;
-  margin: 0;
-}
-
-.accordion a {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  padding: 1rem 3rem 1rem 1rem;
-  color: #7288a2;
-  font-size: 1.15rem;
-  font-weight: 400;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.accordion a:hover,
-.accordion a:hover::after {
-  cursor: pointer;
-  color: #03b5d2;
-}
-
-.accordion a:hover::after {
-  border: 1px solid #03b5d2;
-}
-
-.accordion a.active {
-  color: #03b5d2;
-  border-bottom: 1px solid #03b5d2;
-}
-
-.accordion a::after {
-  font-family: 'Ionicons';
-  content: '\f218';
-  position: absolute;
-  float: right;
-  right: 1rem;
-  font-size: 1rem;
-  color: #7288a2;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #7288a2;
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
   text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
-.accordion a.active::after {
-  font-family: 'Ionicons';
-  content: '\f209';
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
 }
 
-.accordion .content {
-  opacity: 0;
-  padding: 0 1rem;
-  max-height: 0;
-  border-bottom: 1px solid #e5e5e5;
-  overflow: hidden;
-  clear: both;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
+details + details {
+  margin-top: 20px;
 }
 
-.accordion .content p {
-  font-size: 1rem;
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
   font-weight: 300;
 }
 
-.accordion .content.active {
-  opacity: 1;
-  padding: 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #f6f7f8, 0 0 0 5px rebeccapurple;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: rebeccapurple;
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+details[open] summary:hover::after {
+  -webkit-animation: pulse 1s ease;
+          animation: pulse 1s ease;
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
