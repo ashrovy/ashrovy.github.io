@@ -62,7 +62,7 @@ body {
 	font-size: 1.6rem;
 	font-family: "Open Sans", sans-serif;
 	color: #2d3d4f;
-	background-color: #1bbc9d;
+	background: linear-gradient(to right, #1723b1,#58f0ff);
 }
 
 a {
@@ -365,7 +365,7 @@ a {
 }
 
 .exclusive .pricing-header {
-    color: #1bbc9d;
+    color: #1725B2; /*#1bbc9d*/
     background-color: transparent;
 }
 
@@ -403,7 +403,7 @@ a {
 
 .currency, 
 .duration {
-    color: #1bbc9d;
+    color: #1725B2;
 }
 
 .exclusive .currency,
@@ -526,9 +526,9 @@ a {
     display: inline-block;
     height: auto;
     padding: 1.3em 2em;
-    color: #1bbc9d;
+    color: #1723B1;
     border-radius: 8px;
-    border: 2px solid #1bbc9d;
+    border: 2px solid #1723B1; /*#1bbc9d*/
     font-size: 1.4rem;
     text-indent: 0;
     text-transform: uppercase;
@@ -538,21 +538,21 @@ a {
 }
 
 .no-touch .select:hover {
-    background-color: #1bbc9d;
+    background-color: #1723B1; /*linear-gradient(to right, #1723b1,#58f0ff)*/
 	color: #ffffff;
 }
 
 .exclusive .select {
-    background-color: #1bbc9d;
+    background-color: #1723B1;
 	color: #ffffff;
 }
   
 .no-touch .exclusive .select:hover {
-    background-color: #24e0ba;
+    background-color: #58EFFF; /*#58EFFF  | 24e0ba*/
 }
   
 .secondary-theme .exclusive .select {
-    background-color: #1bbc9d;
+    background-color: #1723B1; 
 }
   
 .no-touch .secondary-theme .exclusive .select:hover {
@@ -756,3 +756,67 @@ a {
     transform: perspective(2000px) rotateY(0);
   }
 }
+
+
+
+
+
+
+/*------------ baru */
+/*.haha {
+  text-align: center;
+}
+
+.haha .hihi {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+  border-radius: 50em;
+  border: 2px solid #2d3e50;
+}
+
+.haha input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.haha label {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  float: left;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.haha .hehe {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 40px;
+  width: 90px;
+  background-color: #2d3e50;
+  border-radius: 50em;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.haha input[type="radio"]:checked + label + .hehe,
+.haha input[type="radio"]:checked + label:nth-of-type(n) + .hehe {
+  -webkit-transform: translateX(90px);
+  -moz-transform: translateX(90px);
+  -ms-transform: translateX(90px);
+  -o-transform: translateX(90px);
+  transform: translateX(90px);
+}
+
+.no-js .haha {
+  display: none;
+}
+
+*/

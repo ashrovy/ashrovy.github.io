@@ -119,3 +119,39 @@ details[open] summary:hover::after {
             transform: scale(1);
   }
 }
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background: linear-gradient(to right, #1723b1,#58f0ff);
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+  margin-top:22px;
+}
+
+.float2{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:120px;
+  right:40px;
+  background: linear-gradient(to right, #1723b1,#58f0ff);
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float2{
+  margin-top:22px;
+}
+
+
